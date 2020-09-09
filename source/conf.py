@@ -73,5 +73,4 @@ def setup(app):
     app.add_transform(AutoStructify)
 
 
-html_theme = 'neo_rtd_theme'
 html_search_language = 'ja'
