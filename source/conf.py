@@ -21,17 +21,16 @@ project = "kumitatepazuru's wiki"
 copyright = '2020, kumitatepazuru'
 author = 'kumitatepazuru'
 
-
 # -- General configuration ---------------------------------------------------
 
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-        'recommonmark',
-        'sphinx_markdown_tables',
-        'sphinx.ext.todo',
-        'sphinx.ext.githubpages',
+    'recommonmark',
+    'sphinx_markdown_tables',
+    'sphinx.ext.todo',
+    'sphinx.ext.githubpages',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -48,7 +47,6 @@ language = 'ja'
 # This pattern also affects html_static_path and html_extra_path.
 exclude_patterns = []
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -63,17 +61,17 @@ html_static_path = ['_static']
 
 source_suffix = ['.rst', '.md']
 source_parsers = {
-   '.md': 'recommonmark.parser.CommonMarkParser',
+    '.md': 'recommonmark.parser.CommonMarkParser',
 }
 from recommonmark.transform import AutoStructify
+
+
 def setup(app):
     app.add_config_value('recommonmark_config', {
-            'auto_toc_tree_section': 'Contents',
-            }, True)
+        'auto_toc_tree_section': 'Contents',
+    }, True)
     app.add_transform(AutoStructify)
 
-html_theme = 'neo_rtd_theme'
-import sphinx_theme
-html_theme_path = [sphinx_theme.get_html_theme_path()]
-html_search_language = 'ja'
 
+html_theme = 'neo_rtd_theme'
+html_search_language = 'ja'
