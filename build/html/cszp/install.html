@@ -1,0 +1,301 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>インストール &mdash; kumitatepazuru&#39;s wiki  ドキュメント</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="索引"
+              href="../genindex.html"/>
+        <link rel="search" title="検索" href="../search.html"/>
+    <link rel="top" title="kumitatepazuru&#39;s wiki  ドキュメント" href="../index.html"/>
+        <link rel="up" title="cszp Easy soccer execution program wiki" href="cszp.html"/>
+        <link rel="next" title="使い方" href="usage1.html"/>
+        <link rel="prev" title="Welcome!" href="welcome.html"/> 
+
+  
+  <script src="../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> kumitatepazuru's wiki
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="cszp.html">cszp Easy soccer execution program wiki</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="welcome.html">Welcome!</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">インストール</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">前提条件</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">インストール方法</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#python">pythonをインストール</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#cszp">cszpを実際にインストール</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">インストール確認</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="usage1.html">使い方</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">kumitatepazuru's wiki</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="cszp.html">cszp Easy soccer execution program wiki</a> &raquo;</li>
+        
+      <li>インストール</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/cszp/install.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="id1">
+<h1>インストール<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h1>
+<div class="section" id="id2">
+<h2>前提条件<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p><strong>soccerwindow2・rcssserverが実行できる状態にあること。また、bashが標準のコマンドシステムになっていること。OSはmac&amp;linuxのみ。windows?そんなの知らん。</strong></p>
+<p>もし、インストールができていない・実行できない等の場合には以下のプログラムを実行するとrcssserver 16.0.0とsoccerwindow2、librcsc、rcssmonitorがインストールされます。実行可能環境（確認済み）はlinux(Debian系)のみです。</p>
+<p>また、ubuntu20.04LTSからは上記のコマンドを実行するためには、qt4のリポジトリを手動で入れなくてはいけません。（依存等の問題でおすすめできないので方法は載せません）</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ curl -s https://gist.githubusercontent.com/kumitatepazuru/6f731a999d92c62520aff9367882184e/raw/c51e4843b0978ccdfda8ead5619770fa32773fec/setup.sh <span class="p">|</span> sh
+</pre></div>
+</div>
+</div>
+<div class="section" id="id3">
+<h2>インストール方法<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<div class="section" id="python">
+<h3>pythonをインストール<a class="headerlink" href="#python" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p><strong>開発にpythonを使っている方も飛ばさないで読んでください。</strong></p>
+<p>以下のコマンドを実行してpython及びpipのインストールをします。</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt install python3-pip
+</pre></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">重要</p>
+<p>以下のコマンドを実行し、versionが3.6.1未満だった場合はその下のコマンド入力して再インストールをする必要があります。</p>
+</div>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ python3 --version
+</pre></div>
+</div>
+<p>再インストールコマンド</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ sudo apt autoremove -y python3-pip
+$ sudo apt install -y git make build-essential libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev xz-utils tk-dev libxml2-dev libxmlsec1-dev libffi-dev liblzma-dev
+$ git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+$ <span class="nb">echo</span> <span class="s1">&#39;export PYENV_ROOT=&quot;$HOME/.pyenv&quot;&#39;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">echo</span> <span class="s1">&#39;export PATH=&quot;$PYENV_ROOT/bin:$PATH&quot;&#39;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">echo</span> <span class="s1">&#39;eval &quot;$(pyenv init -)&quot;&#39;</span> &gt;&gt; ~/.bashrc
+$ <span class="nb">source</span> ~/.bashrc
+$ pyenv install <span class="m">3</span>.6.4
+$ pyenv global <span class="m">3</span>.6.4
+</pre></div>
+</div>
+</div>
+<div class="section" id="cszp">
+<h3>cszpを実際にインストール<a class="headerlink" href="#cszp" title="このヘッドラインへのパーマリンク">¶</a></h3>
+<p>pip3というコマンドが使えるようになっているはずなので以下のコマンドを実行してcszpをインストールします。</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ pip3 install -U pip <span class="p">&amp;</span> pip3 install cszp
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="id4">
+<h2>インストール確認<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
+<p>cszpコマンドが使えるようになっているはずなので実行します。</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>$ cszp
+</pre></div>
+</div>
+<p>そうして以下の画面が出たらインストールが成功しています。インストール時にエラー等が出た場合はやり方を確認して再度実行して見てください。それでも解決しない場合はgithubのissue等で教えてください。</p>
+<p><img alt="image-20200820152910802" src="../_images/image-20200820152910802.png" /></p>
+<div class="admonition hint">
+<p class="admonition-title">ヒント</p>
+<p>もし、下の画像に似たような警告が出てプログラムが止まる場合はEnterキーを押すと実行できます。原因としてはpluginsフォルダの中に余計なものまたは実行できないプラグインが存在する場合に表示されます。</p>
+</div>
+<img alt="../_images/20200621185709.png" src="../_images/20200621185709.png" />
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="usage1.html" class="btn btn-neutral float-right" title="使い方" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="welcome.html" class="btn btn-neutral" title="Welcome!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, kumitatepazuru.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> and ❤️  using a custom <a href="https://github.com/LinxiFan/Sphinx-theme">theme</a> based on <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="../_static/jquery.js"></script>
+      <script type="text/javascript" src="../_static/underscore.js"></script>
+      <script type="text/javascript" src="../_static/doctools.js"></script>
+      <script type="text/javascript" src="../_static/language_data.js"></script>
+      <script type="text/javascript" src="../_static/translations.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
