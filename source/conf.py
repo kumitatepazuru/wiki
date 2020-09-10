@@ -59,9 +59,9 @@ html_theme = 'alabaster'
 # so a file named "default.css" will overwrite the builtin "default.css".
 html_static_path = ['_static']
 
-source_suffix = ['.rst']
+source_suffix = ['.rst', '.md']
 source_parsers = {
-    '.md': 'recommonmark.parser.CommonMarkParser',
+    # '.md': 'recommonmark.parser.CommonMarkParser',
 }
 from recommonmark.transform import AutoStructify
 
