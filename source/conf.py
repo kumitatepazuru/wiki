@@ -63,6 +63,8 @@ source_suffix = ['.rst', '.md']
 source_parsers = {
     # '.md': 'recommonmark.parser.CommonMarkParser',
 }
+master_doc = 'index'
+
 from recommonmark.transform import AutoStructify
 
 
